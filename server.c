@@ -106,7 +106,7 @@ void *p_Recv(void *Param)
         if (g_Client[i_Flag].i_First == 1)
 		{
 			memset(g_Client[i_Flag].r_Buffer, 0, sizeof(g_Client[i_Flag].r_Buffer));
-			sprintf(g_Client[i_Flag].r_Buffer, "%s: %s", g_Client[i_Flag].s_UserName, s_Temp);
+			sprintf(g_Client[i_Flag].r_Buffer, "%s:\r\n    %s", g_Client[i_Flag].s_UserName, s_Temp);
 			printf("recv - %d: %s\r\n", i_Flag, g_Client[i_Flag].r_Buffer);  
 		}
 
